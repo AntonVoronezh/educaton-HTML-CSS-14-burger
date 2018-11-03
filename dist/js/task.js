@@ -1,0 +1,1 @@
+const arr=["9999999999999","555","7","8"],rand=(r,a)=>r+Math.floor(Math.random()*(a+1-r)),getRandElemFromArr=arr[rand(0,3)];console.log(getRandElemFromArr);

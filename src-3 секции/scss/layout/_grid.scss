@@ -1,0 +1,20 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+.container {
+    margin: 5px;
+    flex-grow: 1;
+    height: 100vh;
+    @include flex-center;
+    
+}

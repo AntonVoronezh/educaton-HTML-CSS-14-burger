@@ -1,0 +1,84 @@
+@mixin back {
+    // background-color: #ffffff;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@mixin flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin a-settings {
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {}
+    &:focus {
+        text-decoration: underline;
+    }
+    &:visited {
+        text-decoration: underline;
+    }
+    &:active {
+        text-decoration: underline;
+    }
+}
+
+@mixin a-color {
+    transition: color 1.1s;
+    color: $a-color;
+    &:hover {
+        color: $a-color-hover;
+    }
+    &:focus {
+        color: $a-color-focus;
+    }
+    &:visited {
+        // color: $a-color-visited;
+    }
+    &:active {
+        color: $a-color-active;
+    }
+}
+
+@mixin btn-settings {
+    padding: rem(10px) rem(15px);
+    border-radius: rem(10px);
+    font-size: rem(13px);
+    font-weight: 500;
+    line-height: rem(30px);
+    transition: background-color 1s, color 1s;
+}
+
+@mixin btn-background-color {
+    background-color: $btn-background-color;
+    &:hover {
+        // background-color: rgba(255, 255, 255, 0.5);
+        // background-color: lighten($orange,10%);
+        background-color: $btn-background-color-hover;
+        color: $a-color-active;
+    }
+    &:focus {
+        background-color: $btn-background-color-focus;
+    }
+    &:visited {
+        background-color: darken($btn-background-color-visited, 10%);
+    }
+    &:active {
+        background-color: $btn-background-color-active;
+    }
+}
+
+@mixin tablets {
+    @media (max-width: $tablets) {
+        @content;
+    }
+}
+
+@mixin phones {
+    @media (max-width: $phones) {
+        @content;
+    }
+}

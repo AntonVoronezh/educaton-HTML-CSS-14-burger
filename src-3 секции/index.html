@@ -6,7 +6,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=940,initial-scale=1">
+    <meta name="viewport" content="width=940, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="бургер, бургер, бургер">
     <meta name="description" content="Лучшая бургерная">
@@ -23,9 +23,9 @@
         <!-- start main -->
         <main class="main">
             <!-- start first section -->
-            <section class="section first" data-anchor="section-first">
+            <section class="section  first" data-anchor="section-first">
                 <!-- start container--first -->
-                <div class="container container--first">
+                <div class="container  container--first">
                     <!-- start header -->
                     <header class="header">
                         <!-- start logo -->
@@ -33,9 +33,6 @@
                             <svg class="img logo__img">
                                 <use xlink:href="img/icons/sprite.svg#logo" width="92px" height="69px"></use>
                             </svg>
-                            <!-- <svg class="img logo__img">
-                                    <use xlink:href="img/icons/sprite.svg#menu" width="32px" height="32px"></use>
-                                </svg> -->
                         </div>
                         <!-- end logo -->
                         <!-- start navigation -->
@@ -80,11 +77,24 @@
                         </nav>
                         <!-- end navigation -->
                         <!-- start order -->
+
                         <div class="order">
-                            <a href="#" class="btn">
-                                заказать
-                            </a>
+                            <ul class="order__list">
+                                <li class="order__item">
+                                    <a href="#" class="btn">
+                                        заказать
+                                    </a>
+                                </li>
+                                <li class="order__item">
+                                    <a href="#" class="menu-tablets">
+                                        <svg class="img  menug">
+                                            <use xlink:href="img/icons/sprite.svg#menug" width="32px" height="32px"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
+
                         <!-- end order -->
                     </header>
                     <!-- end header -->
@@ -114,10 +124,10 @@
             <!-- end first section -->
             <h1 class="visually-hidden">Самые лучшие бургеры</h1>
             <!-- start we section -->
-            <section class="section we" data-anchor="section-we">
+            <section class="section  we" data-anchor="section-we">
                 <h2 class="visually-hidden">Мы самые лучшие</h2>
-                <div class="container container--we">
-                    <h3 class="title title--black">
+                <div class="container  container--we">
+                    <h3 class="title  title--black">
                         Мы лучшие
                     </h3>
                     <ul class="we__list">
@@ -125,29 +135,42 @@
                             <svg class="img we__img">
                                 <use xlink:href="img/icons/sprite.svg#meat" width="97px" height="89px"></use>
                             </svg>
-                            <h4 class="we__subtitle">100% свежее мясо</h4>
-                            <div class="we__text">Драма представляет собой деструктивный цикл. Анапест представляет
-                                собой анапест. Ямб
-                                неравномерен.</div>
+                            <div class="we__wrap">
+                                <h4 class="we__subtitle">100% свежее мясо</h4>
+                                <div class="we__text">
+
+                                    Драма представляет собой деструктивный цикл. Анапест представляет
+                                    собой анапест. Ямб
+                                    неравномерен.
+                                </div>
+                            </div>
                         </li>
                         <li class="we__item">
                             <svg class="img we__img">
                                 <use xlink:href="img/icons/sprite.svg#hand" width="73px" height="85.875px"></use>
                             </svg>
-                            <h4 class="we__subtitle we__subtitle--hand">Ручная сборка</h4>
-                            <div class="we__text">Драма представляет собой деструктивный цикл. Анапест представляет
-                                собой
-                                анапест. Первое
-                                полустишие притягивает сюжетный реформаторский пафос.</div>
+                            <div class="we__wrap">
+                                <h4 class="we__subtitle  we__subtitle--hand">Ручная сборка</h4>
+                                <div class="we__text">Драма представляет собой деструктивный цикл. Анапест представляет
+                                    собой
+                                    анапест. Первое
+                                    полустишие притягивает сюжетный реформаторский пафос.
+                                </div>
+                            </div>
+
                         </li>
                         <li class="we__item">
                             <svg class="img we__img">
                                 <use xlink:href="img/icons/sprite.svg#natural" width="88px" height="75.534px"></use>
                             </svg>
-                            <h4 class="we__subtitle we__subtitle--natural">Натуральные ингредиенты</h4>
-                            <div class="we__text"> Драма представляет собой деструктивный цикл. Анапест представляет
-                                собой анапест. Ямб
-                                неравномерен.</div>
+                            <div class="we__wrap">
+                                <h4 class="we__subtitle  we__subtitle--natural">Натуральные ингредиенты</h4>
+                                <div class="we__text"> Драма представляет собой деструктивный цикл. Анапест
+                                    представляет
+                                    собой анапест. Ямб
+                                    неравномерен.
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -155,22 +178,22 @@
             <h2 class="visually-hidden">Кратко о нас</h2>
             <!-- end we section -->
             <!-- start team section -->
-            <section class="section team" data-anchor="section-team">
+            <section class="section  team" data-anchor="section-team">
                 <h2 class="visually-hidden">Команда, которая творит лучшие бургеры</h2>
-                <div class="container container--team">
+                <div class="container  container--team">
                     <div class="team__board">
                         <!-- start team title -->
-                        <h3 class="title title--yellow">
+                        <h3 class="title  title--yellow">
                             команда
                         </h3>
-                        <section class="team__accordion accordion-team">
+                        <section class="team__accordion  accordion-team">
                             <div class="accordion-team__wrap">
                                 <a href="#" class="accordion-team__link">
-                                    <h3 class="title title--white title--team">Дэниэл Редклиф</h3>
+                                    <h4 class="title  title--white  title--team">Дэниэл Редклиф</h4>
                                 </a>
                                 <section class="accordion-team__section">
                                     <div class="accordion-team__img">
-                                        <img src="img/photo/team/images.jpg" alt="фото" class="img accordion-team__pic">
+                                        <img src="img/photo/team/images.jpg" alt="фото" class="img  accordion-team__pic">
                                     </div>
                                     <div class="accordion-team__desc">
                                         <div class="accordion-team__title">
@@ -182,32 +205,14 @@
                                     </div>
                                 </section>
                             </div>
-                            <div class="accordion-team__wrap">
+                            <div class="accordion-team__wrap   accordion-team__wrap--active">
                                 <!--  accordion-team__input--active-->
                                 <a href="#" class="accordion-team__link">
-                                    <h3 class="title title--white title--team">РИЧАРД ДЖЕЙМС</h3>
+                                    <h4 class="title  title--white  title--team">РИЧАРД ДЖЕЙМС</h4>
                                 </a>
                                 <section class="accordion-team__section">
                                     <div class="accordion-team__img">
-                                        <img src="img/photo/team/images.jpg" alt="фото" class="img accordion-team__pic">
-                                    </div>
-                                    <div class="accordion-team__desc">
-                                        <div class="accordion-team__title">
-                                            Оператор
-                                        </div>
-                                        <div class="accordion-team__text">
-                                            С радостью поможет подобрать идеальный бургер и оформить заказ.
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                            <div class="accordion-team__wrap accordion-team__wrap--active">
-                                <a href="#" class="accordion-team__link">
-                                    <h3 class="title title--white title--team">Джейк Финн</h3>
-                                </a>
-                                <section class="accordion-team__section">
-                                    <div class="accordion-team__img">
-                                        <img src="img/photo/team/images.jpg" alt="фото" class="img accordion-team__pic">
+                                        <img src="img/photo/team/images.jpg" alt="фото" class="img  accordion-team__pic">
                                     </div>
                                     <div class="accordion-team__desc">
                                         <div class="accordion-team__title">
@@ -221,11 +226,29 @@
                             </div>
                             <div class="accordion-team__wrap">
                                 <a href="#" class="accordion-team__link">
-                                    <h3 class="title title--white title--team">Николай Иванов</h3>
+                                    <h4 class="title  title--white  title--team">Джейк Финн</h4>
                                 </a>
                                 <section class="accordion-team__section">
                                     <div class="accordion-team__img">
-                                        <img src="img/photo/team/images.jpg" alt="фото" class="img accordion-team__pic">
+                                        <img src="img/photo/team/images.jpg" alt="фото" class="img  accordion-team__pic">
+                                    </div>
+                                    <div class="accordion-team__desc">
+                                        <div class="accordion-team__title">
+                                            Оператор
+                                        </div>
+                                        <div class="accordion-team__text">
+                                            С радостью поможет подобрать идеальный бургер и оформить заказ.
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="accordion-team__wrap">
+                                <a href="#" class="accordion-team__link">
+                                    <h4 class="title  title--white  title--team">Николай Иванов</h4>
+                                </a>
+                                <section class="accordion-team__section">
+                                    <div class="accordion-team__img">
+                                        <img src="img/photo/team/images.jpg" alt="фото" class="img  accordion-team__pic">
                                     </div>
                                     <div class="accordion-team__desc">
                                         <div class="accordion-team__title">
@@ -243,17 +266,17 @@
             </section>
             <!-- end team section -->
             <!-- start menu section -->
-            <section class="section menu" data-anchor="section-menu">
+            <section class="section  menu" data-anchor="section-menu">
                 <h2 class="visually-hidden">Наше меню</h2>
-                <h3 class="title title--white">
+                <h3 class="title  title--white">
                     меню
                 </h3>
-                <div class="container container--menu">
+                <div class="container  container--menu">
                     <ul class="menu__list">
                         <li class="menu__item">
                             <a href="#" class="menu__link">
                                 <div class="menu__item-title" style="background-image: url('img/decor/menu/img1.jpg')">
-                                    <h3 class="title title--menu">для мясоедов</h3>
+                                    <h3 class="title  title--menu">для мясоедов</h3>
                                 </div>
                             </a>
                             <div class="menu__item-content">
@@ -269,10 +292,10 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="menu__item menu__item--active">
+                        <li class="menu__item  menu__item--active">
                             <a href="#" class="menu__link">
                                 <div class="menu__item-title" style="background-image: url('img/decor/menu/img2.jpg')">
-                                    <h3 class="title title--menu">Вегетарианское</h3>
+                                    <h3 class="title  title--menu">Вегетарианское</h3>
                                 </div>
                             </a>
                             <div class="menu__item-content">
@@ -291,7 +314,7 @@
                         <li class="menu__item">
                             <a href="#" class="menu__link">
                                 <div class="menu__item-title" style="background-image: url('img/decor/menu/img3.jpg')">
-                                    <h3 class="title title--menu">Диетическое</h3>
+                                    <h3 class="title  title--menu">Диетическое</h3>
                                 </div>
                             </a>
                             <div class="menu__item-content">
@@ -312,9 +335,9 @@
             </section>
             <!-- end menu section -->
             <!-- start reviews section -->
-            <section class="section reviews" data-anchor="section-reviews">
+            <section class="section  reviews" data-anchor="section-reviews">
                 <h2 class="visually-hidden">Отзывы о наших бургерах</h2>
-                <div class="container container--reviews">
+                <div class="container  container--reviews">
                     <ul class="reviews__list">
                         <li class="reviews__item" style="background-image:url('img/photo/rewiews/photo1.jpg');">
                             <section class="comment">
@@ -326,7 +349,7 @@
                                     Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а
                                     сыр таким расплавленным.
                                 </div>
-                                <a href="#" class="comment__link btn">Подробнее</a>
+                                <a href="#" class="comment__link  btn">Подробнее</a>
                             </section>
                         </li>
                         <li class="reviews__item" style="background-image:url('img/photo/rewiews/photo2.jpg');">
@@ -458,10 +481,10 @@
 
             <!-- end burgers section -->
             <!-- start form section -->
-            <section class="section form" data-anchor="section-form">
+            <section class="section  form" data-anchor="section-form">
                 <h2 class="visually-hidden">форма заказа бургеров</h2>
-                <div class="container container--form">
-                    <h3 class="title title--yellow">
+                <div class="container  container--form">
+                    <h3 class="title  title--yellow">
                         закажите доставку
                     </h3>
                     <!-- <div class="form-wrap"> -->
@@ -501,28 +524,29 @@
                                     <textarea name="form" id="form-order__textarea" class="form-order__textarea"></textarea>
                                 </label>
                             </div>
-                            <div class="form-order__row form-order__row--left">
+                            <div class="form-order__row  form-order__row--left">
                                 <label class="form-order__radio-label">
                                     <input class="form-order__radio-input" type="radio" name="radio-test">
                                     <span class="form-order__radio-custom"></span>
                                     <span class="form-order__radio-span">Потребуется сдача</span>
                                 </label>
-                                <label class="form-order__radio-label form-order__row--left">
-                                    <input class="form-order__radio-input" type="radio" name="radio-test" checked="checked">
+                                <label class="form-order__radio-label  form-order__row--left">
+                                    <input class="form-order__radio-input" type="radio" name="radio-test" checked>
                                     <span class="form-order__radio-custom"></span>
                                     <span class="form-order__radio-span">Оплата по карте</span>
                                 </label>
                             </div>
-                            <div class="form-order__row form-order__row--left">
+                            <div class="form-order__row  form-order__row--left">
                                 <label class="form-order__checkbox-label">
-                                    <input class="form-order__checkbox-input" type="checkbox" name="checkbox-test" checked="checked">
+                                    <input class="form-order__checkbox-input" type="checkbox" name="checkbox-test"
+                                        checked>
                                     <span class="form-order__checkbox-custom"></span>
                                     <span class="form-order__checkbox-span">Не перезванивать</span>
                                 </label>
                             </div>
-                            <div class="form-order__row form-order__row--left">
-                                <button class="btn btn--submit" type="submit">Отправить</button>
-                                <button class="btn btn--reset" type="reset">Сбросить</button>
+                            <div class="form-order__row  form-order__row--left">
+                                <button class="btn  btn--submit" type="submit">Отправить</button>
+                                <button class="btn  btn--reset" type="reset">Сбросить</button>
                             </div>
                         </div>
                     </form>
@@ -531,9 +555,9 @@
             </section>
             <!-- end form section -->
             <!-- start section contacts -->
-            <section class="section contacts" data-anchor="section-contacts">
+            <section class="section  contacts" data-anchor="section-contacts">
                 <h2 class="visually-hidden">Отзывы о наших бургерах</h2>
-                <div class="container container--contacts">
+                <div class="container  container--contacts">
                     <!-- start footer -->
                     <footer class="footer">
                         <div class="footer-container">
@@ -543,34 +567,34 @@
                             </address>
                             <div class="social">
                                 <ul class="social__list">
-                                    <li class="social__item social__item--vk">
+                                    <li class="social__item  social__item--vk">
                                         <a href="#" class="social__link" title="vkontakte">
                                             <span class="visually-hidden">vkontakte</span>
-                                            <svg class="img social__img">
+                                            <svg class="img  social__img">
                                                 <use xlink:href="img/icons/sprite.svg#vk" width="20px" height="20px"></use>
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="social__item social__item--fb">
+                                    <li class="social__item  social__item--fb">
                                         <a href="#" class="social__link" title="facebook">
                                             <span class="visually-hidden">facebook</span>
-                                            <svg class="img social__img">
+                                            <svg class="img  social__img">
                                                 <use xlink:href="img/icons/sprite.svg#fb" width="20px" height="20px"></use>
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="social__item social__item--inst">
+                                    <li class="social__item  social__item--inst">
                                         <a href="#" class="social__link" title="instagram">
                                             <span class="visually-hidden">instagram</span>
-                                            <svg class="img social__img">
+                                            <svg class="img  social__img">
                                                 <use xlink:href="img/icons/sprite.svg#inst" width="20px" height="20px"></use>
                                             </svg>
                                         </a>
                                     </li>
-                                    <li class="social__item social__item--tw">
+                                    <li class="social__item  social__item--tw">
                                         <a href="#" class="social__link" title="twitter">
                                             <span class="visually-hidden">twitter</span>
-                                            <svg class="img social__img">
+                                            <svg class="img  social__img">
                                                 <use xlink:href="img/icons/sprite.svg#tw" width="20px" height="20px"></use>
                                             </svg>
                                         </a>

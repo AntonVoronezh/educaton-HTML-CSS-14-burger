@@ -67,3 +67,7 @@ for (let i = 0; i < arr.length; i += 1) {
         console.log(arr[i]);
     }
 }
+
+// Задание 3 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+// 1
+const obj = {};

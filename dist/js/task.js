@@ -54,3 +54,7 @@ arr.push('я изучаю');
 arr.push('JavaScript');
 // 3
 console.log(arr.length);
+// 4
+for (let i = 0; i < arr.length; i += 1) {
+    console.log(i);
+}

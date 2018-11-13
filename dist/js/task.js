@@ -14,3 +14,7 @@ if (10 > 9) {
     // 2
     console.log('ok');
 }
+// 3
+if (8 > 9) {
+    console.log('ok');
+}

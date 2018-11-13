@@ -52,3 +52,5 @@ const arr = ['привет', 'loftschool'];
 // 2
 arr.push('я изучаю');
 arr.push('JavaScript');
+// 3
+console.log(arr.length);

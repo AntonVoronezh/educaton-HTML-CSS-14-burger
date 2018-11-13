@@ -77,3 +77,5 @@ obj.name = 'Jonn';
 obj.lastName = 'Black';
 // 5
 obj.age = 40;
+// 6
+console.log(`${obj.name} -> ${obj.lastName} -> ${obj.age}`);

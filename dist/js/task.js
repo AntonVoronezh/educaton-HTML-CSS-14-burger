@@ -33,4 +33,6 @@ for (let i = 0; i < 10; i += 1) {
 const sum = (p1, p2, p3) => {
     // 2
     const result = p1 + p2 + p3;
+    // 3
+    return result;
 };

@@ -79,3 +79,6 @@ obj.lastName = 'Black';
 obj.age = 40;
 // 6
 console.log(`${obj.name} -> ${obj.lastName} -> ${obj.age}`);
+// 7
+obj.sity = 'Voronezh';
+console.log(obj.sity);

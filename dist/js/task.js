@@ -71,3 +71,9 @@ for (let i = 0; i < arr.length; i += 1) {
 // Задание 3 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 // 1
 const obj = {};
+// 3
+obj.name = 'Jonn';
+// 4
+obj.lastName = 'Black';
+// 5
+obj.age = 40;

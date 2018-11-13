@@ -5,3 +5,5 @@ var name = 'Антон';
 console.log(name);
 // 3
 name = 'Наташа';
+// 4
+console.log(name);

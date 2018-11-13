@@ -49,3 +49,6 @@ console.log(out2);
 // Задание 1
 // 1
 const arr = ['привет', 'loftschool'];
+// 2
+arr.push('я изучаю');
+arr.push('JavaScript');

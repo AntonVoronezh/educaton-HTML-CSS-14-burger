@@ -41,3 +41,6 @@ sum(10, 20, 30);
 // 5
 const out = sum(10, 20, 30);
 console.log(out);
+// 6
+const out2 = sum(1, 7, 3);
+console.log(out2);

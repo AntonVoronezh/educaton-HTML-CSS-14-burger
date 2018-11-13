@@ -36,3 +36,5 @@ const sum = (p1, p2, p3) => {
     // 3
     return result;
 };
+// 4
+sum(10, 20, 30);

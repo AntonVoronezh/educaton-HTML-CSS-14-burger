@@ -58,3 +58,6 @@ console.log(arr.length);
 for (let i = 0; i < arr.length; i += 1) {
     console.log(i);
 }
+// Задание 2 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
+// 1
+const arr = ['1', '21', '32', '43', '78', '105', '125', '178', '183', '190'];

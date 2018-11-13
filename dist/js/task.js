@@ -3,3 +3,5 @@
 var name = 'Антон';
 // 2
 console.log(name);
+// 3
+name = 'Наташа';

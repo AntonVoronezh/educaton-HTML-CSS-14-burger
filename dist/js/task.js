@@ -88,3 +88,7 @@ console.log(obj.sity);
 const hello = human => {
     return `Привет, меня зовут ${human.name} ${human.lastName} и мне ${human.age} лет!`;
 };
+// 6
+// 7
+const out = hello(obj);
+console.log(out);

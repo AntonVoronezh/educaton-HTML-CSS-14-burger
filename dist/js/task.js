@@ -38,3 +38,6 @@ const sum = (p1, p2, p3) => {
 };
 // 4
 sum(10, 20, 30);
+// 5
+const out = sum(10, 20, 30);
+console.log(out);

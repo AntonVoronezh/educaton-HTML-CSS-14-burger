@@ -44,3 +44,8 @@ console.log(out);
 // 6
 const out2 = sum(1, 7, 3);
 console.log(out2);
+
+// Массивы и объекты===============================
+// Задание 1
+// 1
+const arr = ['привет', 'loftschool'];

@@ -16,3 +16,6 @@ getBody.appendChild(createDiv2);
 
 // 2 Задайте созданному элементу класс 'inner'
 createDiv2.classList.add('inner');
+
+// 3 При помощи DOM API, поместите в элемент текст: 'Этот элемент тоже создан при помощи DOM API'
+createDiv2.textContent = 'Этот элемент тоже создан при помощи DOM API';

@@ -43,3 +43,6 @@ const createA = document.createElement('a');
 // 2 Задайте созданному элементу атрибут href и запишите в этот атрибут значение  'https://loftschool.com'
 createA.setAttribute('href', 'https://loftschool.com');
 createA.textContent = 'ссылка';
+
+//    3 Добавьте созданный элемент в DOM-дерево
+getBody.appendChild(createA);

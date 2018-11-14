@@ -55,3 +55,10 @@ createA.addEventListener('click', function (event) {
     event.preventDefault();
     console.log('Я кликнул на ссылку HREF');
 });
+
+// Задание 6:
+// 1 При помощи DOM API создайте input и button
+const createInput = document.createElement('input');
+const createButton = document.createElement('button');
+
+createButton.textContent = 'кнопка';

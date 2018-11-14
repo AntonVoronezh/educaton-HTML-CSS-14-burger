@@ -8,7 +8,7 @@ console.log(name);
 name = 'Наташа';
 // 4
 console.log(name);
-
+appennd
 // Условный оператор if===================================
 // 1
 if (10 > 9) {

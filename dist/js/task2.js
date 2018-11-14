@@ -62,3 +62,7 @@ const createInput = document.createElement('input');
 const createButton = document.createElement('button');
 
 createButton.textContent = 'кнопка';
+
+// 2 Поместите созданные элементы на страницу
+getBody.appendChild(createInput);
+getBody.appendChild(createButton);

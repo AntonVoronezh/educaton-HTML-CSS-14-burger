@@ -13,3 +13,6 @@ createDiv.textContent = 'Этот элемент создан при помощ�
 // 1 При помощи DOM API создайте элемент с тегом div
 const createDiv2 = document.createElement('div');
 getBody.appendChild(createDiv2);
+
+// 2 Задайте созданному элементу класс 'inner'
+createDiv2.classList.add('inner');

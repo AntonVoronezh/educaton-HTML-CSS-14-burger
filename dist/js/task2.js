@@ -66,3 +66,11 @@ createButton.textContent = 'кнопка';
 // 2 Поместите созданные элементы на страницу
 getBody.appendChild(createInput);
 getBody.appendChild(createButton);
+
+// 3 При клике на кнопку необходимо выводить в консоль значение из текстового поля
+const getInput = document.querySelector('input');
+
+createButton.addEventListener('click', function (event) {
+    event.preventDefault();
+    console.log(getInput.value);
+});

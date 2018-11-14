@@ -39,3 +39,7 @@ createDiv.addEventListener('click', function () {
 // Задание 5:
 //1 При помощи DOM API создайте элемент с тегом a
 const createA = document.createElement('a');
+
+// 2 Задайте созданному элементу атрибут href и запишите в этот атрибут значение  'https://loftschool.com'
+createA.setAttribute('href', 'https://loftschool.com');
+createA.textContent = 'ссылка';

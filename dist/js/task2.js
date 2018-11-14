@@ -8,3 +8,8 @@ getBody.appendChild(createDiv);
 
 // 3 При помощи DOM API, поместите в элемент текст: 'Этот элемент создан при помощи DOM API'
 createDiv.textContent = 'Этот элемент создан при помощи DOM API';
+
+// Задание 2:
+// 1 При помощи DOM API создайте элемент с тегом div
+const createDiv2 = document.createElement('div');
+getBody.appendChild(createDiv2);

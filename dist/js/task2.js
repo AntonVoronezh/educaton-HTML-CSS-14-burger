@@ -35,3 +35,7 @@ createDiv.addEventListener('click', function () {
     console.log('Этот текст говорит о том, что я всё сделал правильно');
 
 });
+
+// Задание 5:
+//1 При помощи DOM API создайте элемент с тегом a
+const createA = document.createElement('a');

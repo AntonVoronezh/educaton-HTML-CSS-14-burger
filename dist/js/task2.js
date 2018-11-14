@@ -46,3 +46,8 @@ createA.textContent = 'ссылка';
 
 //    3 Добавьте созданный элемент в DOM-дерево
 getBody.appendChild(createA);
+
+// 4 Добавьте обработчик события click на созданный элемент
+createA.addEventListener('click', function (event) {
+
+});

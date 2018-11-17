@@ -1,1 +1,1 @@
-var closeLink=document.querySelector(".close__link");console.log(closeLink);
+var closeLink=document.querySelector(".close__link");console.log(closeLink);var mobileMenu=document.querySelector(".mobile-menu");console.log(mobileMenu);

@@ -7,6 +7,9 @@ console.log(mobileMenu);
 var openLink = document.querySelector(".menu-tablets");
 console.log(openLink);
 
+var closeLinkFromNav = document.querySelector(".nav__link");
+console.log(closeLinkFromNav);
+
 openLink.addEventListener("click", function (event) {
     event.preventDefault();
     mobileMenu.classList.add("mobile-menu-open");

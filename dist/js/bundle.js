@@ -22,4 +22,9 @@ closeLink.addEventListener("click", function (event) {
     // console.log('close');
 });
 
+closeLinkFromNav.addEventListener("click", function (event) {
+    // event.preventDefault();
+    mobileMenu.classList.remove("mobile-menu-open");
+    // console.log('close');
+});
 

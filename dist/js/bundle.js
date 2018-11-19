@@ -1,6 +1,8 @@
 const getMunuSelectors = document.querySelectorAll(".menu__item");
 for (let i = 0; i < getMunuSelectors.length; i += 1) {
-
+    getMunuSelectors[i].addEventListener("click", function (event) {
+        
+    });
 }
 var closeLink = document.querySelector(".close__link");
 console.log(closeLink);

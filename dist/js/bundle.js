@@ -3,7 +3,7 @@ for (let i = 0; i < getMunuSelectors.length; i += 1) {
     getMunuSelectors[i].addEventListener("click", function (event) {
         event.preventDefault();
         for (let j = 0; j < getMunuSelectors.length; j += 1) {
-            
+            if (j !== i)
             getMunuSelectors[j].classList.remove("menu__item--active");
             // console.log('del');
         }

@@ -37,4 +37,6 @@ for (let i = 0; i < closeLinkFromNav.length; i += 1) {
 console.log('aaaaaaaaaaaaaaaa');
 
 const getTeamSelectors = document.querySelectorAll(".accordion-team__wrap");
-for (let i = 0; i < getTeamSelectors.length; i += 1) {}
+for (let i = 0; i < getTeamSelectors.length; i += 1) {
+    getTeamSelectors[i].classList.toggle("accordion-team__wrap--active");
+}

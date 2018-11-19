@@ -39,6 +39,7 @@ console.log('aaaaaaaaaaaaaaaa');
 const getTeamSelectors = document.querySelectorAll(".accordion-team__wrap");
 for (let i = 0; i < getTeamSelectors.length; i += 1) {
     getTeamSelectors[i].addEventListener("click", function (event) {
-
+        event.preventDefault();
+        
     });
 }

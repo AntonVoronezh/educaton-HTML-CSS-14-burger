@@ -1,3 +1,4 @@
+
 var closeLink = document.querySelector(".close__link");
 console.log(closeLink);
 

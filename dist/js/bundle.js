@@ -1,4 +1,4 @@
-
+const getMunuSelectors = document.querySelectorAll(".menu__item");
 var closeLink = document.querySelector(".close__link");
 console.log(closeLink);
 

@@ -40,7 +40,40 @@ for (let i = 0; i < closeLinkFromNav.length; i += 1) {
     });
 }
 // конец кода меню (скрытое)
+// начало кода слайдер
+const left = document.querySelector(".slider-layout__left");
+const right = document.querySelector(".slider-layout__right");
+const items = document.querySelector(".slider__wrap");
 
+// ширина изображения
+var width = 100;
+// текущий сдвиг влево
+var count = 0;
+// всего слайдов
+const item = document.querySelectorAll(".slider__item");
+
+right.addEventListener("click", function (event) {
+    event.preventDefault();
+    // console.log(item.length, item.length - 2);
+    if (count <= item.length - 2) {
+        count += 1;
+        // console.log(count + '=>');
+        position = width * count;
+        items.style.marginLeft = '-' + position + '%';
+        // console.log(items.style.marginLeft);
+    }
+});
+
+left.addEventListener("click", function (event) {
+    event.preventDefault();
+    if (count !== 0) {
+        count -= 1;
+        // console.log(count + '<=');
+        position = width * count;
+        items.style.marginLeft = '-' + position + '%';
+    }
+});
+// конец кода слайдер
 // Задание 1:
 function filter(input, than) {
 

@@ -1,64 +1,3 @@
-// начало карты
-
-
-ymaps.ready(function () {
-    var myMap = new ymaps.Map('map', {
-        center: [51.680427, 39.176769],
-        zoom: 14
-    }, {
-            searchControlProvider: 'yandex#search'
-        }),
-
-        // Создаём макет содержимого.
-        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-        ),
-
-        
-        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Собственный значок метки',
-            balloonContent: 'Это красивая метка'
-        }, {
-                // Опции.
-                // Необходимо указать данный тип макета.
-                iconLayout: 'default#image',
-                // Своё изображение иконки метки.
-                iconImageHref: './img/icons/map-marker.svg',
-                // Размеры метки.
-                iconImageSize: [46, 57],
-                // Смещение левого верхнего угла иконки относительно
-                // её "ножки" (точки привязки).
-                iconImageOffset: [-1, -1]
-            }),
-
-        myPlacemarkWithContent = new ymaps.Placemark([51.689497, 39.176869], {
-            hintContent: 'Собственный значок метки с контентом',
-            balloonContent: 'А эта — новогодняя',
-            iconContent: '12'
-        }, {
-                // Опции.
-                // Необходимо указать данный тип макета.
-                iconLayout: 'default#imageWithContent',
-                // Своё изображение иконки метки.
-                iconImageHref: './img/icons/map-marker.svg',
-                // Размеры метки.
-                iconImageSize: [46, 57],
-                // Смещение левого верхнего угла иконки относительно
-                // её "ножки" (точки привязки).
-                iconImageOffset: [-24, -24],
-                // Смещение слоя с содержимым относительно слоя с картинкой.
-                iconContentOffset: [15, 15],
-                // Макет содержимого.
-                iconContentLayout: MyIconContentLayout
-            });
-
-    myMap.geoObjects
-        .add(myPlacemark)
-        .add(myPlacemarkWithContent);
-});
-
-document.addEventListener("DOMContentLoaded", ready);
-// конец карты
 // начало кода аккордеон (горизонтальный)
 const getMunuSelectors = document.querySelectorAll(".menu__item");
 for (let i = 0; i < getMunuSelectors.length; i += 1) {
@@ -72,6 +11,7 @@ for (let i = 0; i < getMunuSelectors.length; i += 1) {
     });
 }
 // конец кода аккордеон (горизонтальный)
+// начало кода модальное окно отзывов
 const getCommentsSelectors = document.querySelectorAll(".comment__link");
 const successOverlay = createOverlay(" <h3 class=\"comment__title--overlay\">Стивен Спилберг</h3>" + 
 "С другой стороны дальнейшее развитие различных форм" + 
@@ -80,30 +20,31 @@ const successOverlay = createOverlay(" <h3 class=\"comment__title--overlay\">С�
 "направлений прогрессивного развития!");
 
 for (let i = 0; i < getCommentsSelectors.length; i += 1) {
-  getCommentsSelectors[i].addEventListener("click", function (event) {
-      event.preventDefault();
-      document.body.appendChild(successOverlay);
-  });
+    getCommentsSelectors[i].addEventListener("click", function (event) {
+        event.preventDefault();
+        document.body.appendChild(successOverlay);
+    });
 }
 
 function createOverlay(content) {
-  const overlayElement = document.createElement("div");
-  overlayElement.classList.add("overlay");
-
-  const template = document.querySelector("#overlayTemplate");
-  overlayElement.innerHTML = template.innerHTML;
-
-  const closeElement = overlayElement.querySelector(".close");
-  closeElement.addEventListener("click", function(event) {
-      event.preventDefault();
-    document.body.removeChild(overlayElement);
-  });
-
-  const contentElement = overlayElement.querySelector(".content");
-  contentElement.innerHTML = content;
-
-  return overlayElement;
-}
+    const overlayElement = document.createElement("div");
+    overlayElement.classList.add("overlay");
+  
+    const template = document.querySelector("#overlayTemplate");
+    overlayElement.innerHTML = template.innerHTML;
+  
+    const closeElement = overlayElement.querySelector(".close");
+    closeElement.addEventListener("click", function(event) {
+        event.preventDefault();
+      document.body.removeChild(overlayElement);
+    });
+  
+    const contentElement = overlayElement.querySelector(".content");
+    contentElement.innerHTML = content;
+  
+    return overlayElement;
+  }
+// конец кода модальное окно отзывов
 // начало кода меню (скрытое)
 var closeLink = document.querySelector(".close__link");
 console.log(closeLink);

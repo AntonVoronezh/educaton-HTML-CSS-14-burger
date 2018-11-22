@@ -81,7 +81,8 @@ const successOverlay = createOverlay(" <h3 class=\"comment__title--overlay\">С�
 
 for (let i = 0; i < getCommentsSelectors.length; i += 1) {
   getCommentsSelectors[i].addEventListener("click", function (event) {
-
+      event.preventDefault();
+      document.body.appendChild(successOverlay);
   });
 }
 // начало кода меню (скрытое)

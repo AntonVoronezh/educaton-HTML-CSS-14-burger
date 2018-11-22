@@ -99,6 +99,8 @@ function createOverlay(content) {
     document.body.removeChild(overlayElement);
   });
 
+  const contentElement = overlayElement.querySelector(".content");
+  contentElement.innerHTML = content;
 
   return overlayElement;
 }

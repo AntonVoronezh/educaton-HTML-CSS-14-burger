@@ -93,6 +93,11 @@ function createOverlay(content) {
   const template = document.querySelector("#overlayTemplate");
   overlayElement.innerHTML = template.innerHTML;
 
+  const closeElement = overlayElement.querySelector(".close");
+  closeElement.addEventListener("click", function(event) {
+      event.preventDefault();
+    document.body.removeChild(overlayElement);
+  });
 
 
   return overlayElement;

@@ -85,6 +85,16 @@ for (let i = 0; i < getCommentsSelectors.length; i += 1) {
       document.body.appendChild(successOverlay);
   });
 }
+
+function createOverlay(content) {
+
+
+
+
+
+
+  return overlayElement;
+}
 // начало кода меню (скрытое)
 var closeLink = document.querySelector(".close__link");
 console.log(closeLink);

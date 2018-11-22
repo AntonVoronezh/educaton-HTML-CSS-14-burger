@@ -73,6 +73,7 @@ for (let i = 0; i < getMunuSelectors.length; i += 1) {
 }
 // конец кода аккордеон (горизонтальный)
 const getCommentsSelectors = document.querySelectorAll(".comment__link");
+const successOverlay = createOverlay(" ");
 // начало кода меню (скрытое)
 var closeLink = document.querySelector(".close__link");
 console.log(closeLink);

@@ -87,7 +87,8 @@ for (let i = 0; i < getCommentsSelectors.length; i += 1) {
 }
 
 function createOverlay(content) {
-
+  const overlayElement = document.createElement("div");
+  overlayElement.classList.add("overlay");
 
 
 

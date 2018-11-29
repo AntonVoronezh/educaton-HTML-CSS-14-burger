@@ -8,6 +8,8 @@
     <meta name="keywords" content="бургер, бургер, бургер">
     <meta name="description" content="Лучшая бургерная">
     <link rel="stylesheet" href="css/bundle.css">
+    <script src="./js/vendors/jquery-3.3.1.min.js"></script>
+    <script src="./js/vendors/fullpage.js"></script>
     <title>mr. Burger</title>
 </head>
 
@@ -18,7 +20,7 @@
     <!-- start wrapper -->
     <div class="wrapper">
         <!-- start main -->
-        <main class="main">
+        <main class="main" id="fullpage">
             <!-- start first section -->
             <section class="section  first" data-anchor="section-first">
                 <!-- start container--first -->
@@ -36,37 +38,37 @@
                         <nav class="navigation">
                             <ul class="navigation__list">
                                 <li class="navigation__item">
-                                    <a href="#" class="navigation__link" title="О нас">
+                                    <a href="#section-we" class="navigation__link" title="О нас">
                                         О нас
                                     </a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a href="#" class="navigation__link" title="Бургеры">
+                                    <a href="#section-burgers" class="navigation__link" title="Бургеры">
                                         Бургеры
                                     </a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a href="#" class="navigation__link" title="Команда">
+                                    <a href="#section-team" class="navigation__link" title="Команда">
                                         Команда
                                     </a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a href="#" class="navigation__link" title="Меню">
+                                    <a href="#section-menu" class="navigation__link" title="Меню">
                                         Меню
                                     </a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a href="#" class="navigation__link" title="Отзывы">
+                                    <a href="#section-reviews" class="navigation__link" title="Отзывы">
                                         Отзывы
                                     </a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a href="#" class="navigation__link" title="как мы работаем">
+                                    <a href="#section-how" class="navigation__link" title="как мы работаем">
                                         как мы работаем
                                     </a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a href="#" class="navigation__link" title="Контакты">
+                                    <a href="#section-contacts" class="navigation__link" title="Контакты">
                                         Контакты
                                     </a>
                                 </li>
@@ -74,7 +76,6 @@
                         </nav>
                         <!-- end navigation -->
                         <!-- start order -->
-
                         <div class="order">
                             <ul class="order__list">
                                 <li class="order__item">
@@ -119,7 +120,6 @@
                 <!-- end container--first -->
             </section>
             <!-- end first section  -->
-
             <!-- </div> -->
 
             <h1 class="visually-hidden">Самые лучшие бургеры</h1>
@@ -1238,9 +1238,13 @@
                 </div>
             </section>
             <!-- end reviews section -->
-            <!-- start menu section -->
-            <!-- ==========================================ПЕРЕКЛЮЧИТЬ ВЕТКИ============================================================ -->
-            <!-- end menu section -->
+            <!-- start how section -->
+            <section class="section  how" data-anchor="section-how">
+                <h2 class="visually-hidden">как делают бургеры</h2>
+                <div class="container  container--how">
+                </div>
+            </section>
+            <!-- end how section -->
             <!-- start form section -->
             <section class="section  form" data-anchor="section-form">
                 <h2 class="visually-hidden">форма заказа бургеров</h2>
@@ -1340,11 +1344,12 @@
                 </div>
             </section>
             <!-- end form section -->
+            <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&load=package.full" type="text/javascript"></script>
             <!-- start section contacts -->
-            <section class="section  contacts" data-anchor="section-contacts"  id="map">
+            <section class="section  contacts" data-anchor="section-contacts">
                 <h2 class="visually-hidden">Отзывы о наших бургерах</h2>
-                <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-                <div class="container  container--contacts">
+
+                <div class="container  container--contacts" id="map">
                     <!-- start footer -->
                     <footer class="footer">
                         <div class="footer-container">
@@ -1406,11 +1411,11 @@
             <!-- end section contacts  -->
         </main>
         <!-- end main -->
-        <!-- start pagescroll -->
+        <!-- start pagescroll   pagescroll__link--active-->
         <div class="pagescroll">
-            <ul class="pagescroll__list">
+            <ul class="pagescroll__list" id="menu">
                 <li class="pagescroll__item" data-menuanchor="section-first">
-                    <a href="#section-first" class="pagescroll__link pagescroll__link--active" title="первая секция">
+                    <a href="#section-first" class="pagescroll__link active" title="первая секция">
                         <div class="pagescroll__link-block"></div>
                         <span class="visually-hidden">первая секция</span>
                     </a>
@@ -1421,43 +1426,43 @@
                         <span class="visually-hidden">секция о нас</span>
                     </a>
                 </li>
-                <li class="pagescroll__item">
+                <li class="pagescroll__item" data-menuanchor="section-burgers">
                     <a href="#section-burgers" class="pagescroll__link" title="секция бургеры">
                         <div class="pagescroll__link-block"></div>
                         <span class="visually-hidden">секция бургеры</span>
                     </a>
                 </li>
-                <li class="pagescroll__item">
+                <li class="pagescroll__item" data-menuanchor="section-team">
                     <a href="#section-team" class="pagescroll__link" title="секция команда">
                         <div class="pagescroll__link-block"></div>
                         <span class="visually-hidden">секция команда</span>
                     </a>
                 </li>
-                <li class="pagescroll__item">
+                <li class="pagescroll__item" data-menuanchor="section-menu">
                     <a href="#section-menu" class="pagescroll__link" title="секция меню">
                         <div class="pagescroll__link-block"></div>
                         <span class="visually-hidden">секция меню</span>
                     </a>
                 </li>
-                <li class="pagescroll__item">
+                <li class="pagescroll__item" data-menuanchor="section-reviews">
                     <a href="#section-reviews" class="pagescroll__link" title="секция отзывы">
                         <div class="pagescroll__link-block"></div>
                         <span class="visually-hidden">секция отзывы</span>
                     </a>
                 </li>
-                <li class="pagescroll__item">
+                <li class="pagescroll__item" data-menuanchor="section-how">
                     <a href="#section-how" class="pagescroll__link" title="секция как">
                         <div class="pagescroll__link-block"></div>
                         <span class="visually-hidden">секция как</span>
                     </a>
                 </li>
-                <li class="pagescroll__item">
+                <li class="pagescroll__item" data-menuanchor="section-form">
                     <a href="#section-form" class="pagescroll__link" title="секция форма">
                         <div class="pagescroll__link-block"></div>
                         <span class="visually-hidden">секция форма</span>
                     </a>
                 </li>
-                <li class="pagescroll__item">
+                <li class="pagescroll__item" data-menuanchor="section-contacts">
                     <a href="#section-contacts" class="pagescroll__link" title="секция контакты">
                         <div class="pagescroll__link-block"></div>
                         <span class="visually-hidden">секция контакты</span>
@@ -1471,17 +1476,17 @@
             <div class="mobile-menu-wrap">
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li class="nav__item"><a class="nav__link" href="#we">о нас</a>
+                        <li class="nav__item"><a class="nav__link" href="#section-we">о нас</a>
                         </li>
-                        <li class="nav__item"><a class="nav__link" href="#burgers">бургеры</a>
+                        <li class="nav__item"><a class="nav__link" href="#section-burgers">бургеры</a>
                         </li>
-                        <li class="nav__item"><a class="nav__link" href="#team">команда</a>
+                        <li class="nav__item"><a class="nav__link" href="#section-team">команда</a>
                         </li>
-                        <li class="nav__item"><a class="nav__link" href="#menu">меню</a>
+                        <li class="nav__item"><a class="nav__link" href="#section-menu">меню</a>
                         </li>
-                        <li class="nav__item"><a class="nav__link" href="#reviews">отзывы</a>
+                        <li class="nav__item"><a class="nav__link" href="#section-reviews">отзывы</a>
                         </li>
-                        <li class="nav__item"><a class="nav__link" href="#contacts">контакты</a>
+                        <li class="nav__item"><a class="nav__link" href="#section-contacts">контакты</a>
                         </li>
                     </ul>
                 </nav>
